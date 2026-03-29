@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Video</title>
+        <link rel="stylesheet" href="vid.css">
+        <script src="function.js"></script>
+    </head>
+<body>
+    <video id="myVideo" width="640" height="360" loop style="display: none;">
+        <source src="m.mp4" type="video/mp4">
+    </video>
+    <button id="playBtn" style="position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 2; padding: 16px 36px; font-size: 1.2rem; border-radius: 8px; border: none; background: #987e29; color: #fff; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">Click for Surprise</button>
+    <script>
+        const video = document.getElementById('myVideo');
+        const btn = document.getElementById('playBtn');
+        btn.addEventListener('click', function() {
+            video.style.display = 'block';
+            video.muted = false;
+            video.play();
+            btn.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

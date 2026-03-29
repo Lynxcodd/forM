@@ -1,0 +1,54 @@
+body {
+  background-image: url('retro.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(4px) brightness(0.8);
+  z-index: 0;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+video {
+  display: block;
+  width: 90vw;
+  max-width: 800px;
+  height: auto;
+  border: 1px solid rgb(193, 155, 21);
+  border-radius: 2px;
+  aspect-ratio: 16/11;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  video {
+    width: 98vw;
+    max-width: 100vw;
+    border-width: 1.5px;
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,67 @@
+
+   
+
+body{
+   background-image: url('flower.jpg');
+   background-size: cover;
+   background-position: center; 
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   
+
+
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    color:black;
+   text-shadow: 0 0 15px rgb(232, 140, 12);
+  
+}
+#box{
+    width: 350px;
+    height: 300px;
+    background: linear-gradient(
+    to bottom, 
+    rgba(255, 255, 0, 0.7),  /* yellow at 50% opacity */
+    rgba(255, 165, 0, 0.7)   /* orange at 50% opacity */
+  );
+    border-radius: 15px;
+    position: absolute;
+    border: 3px  solid rgb(193, 155, 21);
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+#button{
+    width: 190px;
+    height: 30px;
+    background-color: rgb(251, 213, 58);;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    align-self: center;
+    text-align: center;
+    border: 3px solid rgb(140, 108, 20);
+    button:active{
+        background-color: rgb(140, 108, 20);
+    font-family:Arial, Helvetica, sans-serif;
+    }
+            
+} 
+
+h2{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    color:black;
+   text-shadow: 0 0 15px rgb(232, 140, 12);
+}
